@@ -1,10 +1,10 @@
 import requests
 from twilio.rest import Client
 
-api_key = "d9ff5f43fd612f1092a864ab4af377a7"
+api_key = "notmyapikey"
 OWM_endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-account_sid = "AC92f77f85973027db2c34dc69ee94b8b4"
-auth_token = "6e9d4e4bcb07461f76d0585cd846f6b0"
+account_sid = "notmyaccountsid"
+auth_token = "notmyauthtoken"
 
 
 weather_params = {
@@ -37,8 +37,8 @@ if will_rain:
     message = client.messages \
         .create(
         body="Leva chuço, rei ☂️",
-        from_="+17084809890",
-        to="+351968959727"
+        from_="+notmphonenumber",
+        to="++notmphonenumber"
     )
     print(message.status)
 
